@@ -5,6 +5,8 @@ async function start() {
   // because they are global variables
 
   // specifically for playwright webkit flakyness
+  // (hard to write if blackbox testing - sneak peak on code neeeded
+  //  or discussion with developer)
   if (!window.jsonLoader) { setTimeout(start, 1); return; }
 
   player = await jsonLoader("player.json");

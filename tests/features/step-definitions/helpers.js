@@ -113,6 +113,8 @@ export async function checkIfDescriptionContainsString(world, string, softCheck 
 export async function cheatIfNeeded(world) {
   // cheat and add health if we are about to die
   // so that the win game test never fails
+  // (hard to write if blackbox testing - sneak peak on code neeeded
+  //  or discussion with developer)
   if (world.currentFeature?.name === 'Win the game') {
     let { cheated, health } = await world.runScriptInBrowser(() => {
       let cheated = false;

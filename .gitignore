@@ -1,6 +1,6 @@
 # Test results
-tests/results/chrome.json
-tests/results/chrome.html
+tests/results/test-result.json
+tests/results/test-result.html
 
 # Logs
 logs
